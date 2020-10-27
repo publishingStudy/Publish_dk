@@ -1,0 +1,101 @@
+:root {
+    --side-padding : 12px;
+    --font-large : 18px;
+    --font-medium: 14px;
+    --font-small:12px;
+    --font-micro:10px;
+
+    --green-color: #00701a;
+    --yellow-color: #ffc947;
+    --gray-color : #e5e5e5;
+}
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+header {
+    width:100%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: solid 1px #e5e5e5;
+
+
+}
+
+header .top {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    border : solid 1px #e5e5e5;
+
+}
+
+header .top .auth {
+    display : flex;
+    align-items : center;
+    font-size : 13px;
+    position : absolute;
+    right : 280px;
+       
+}
+
+header .top .auth .login {
+    margin-right: 25px;
+    color : var(--gray-color);
+    cursor: pointer;
+
+}
+
+header .top .auth .signup {
+    margin-right: 5px;
+    color : var(--gray-color);
+    cursor: pointer;
+    
+}
+
+header .top .auth .fa-globe {
+    cursor : pointer;
+    color : var(--gray-color);
+}
+
+header .nav {
+    display : flex;
+    list-style: none;
+    border : solid 1px #e5e5e5;
+    /* margin padding 구분용 */
+
+}
+header .nav .menu{
+    margin : 20px 55px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+header .nav:hover .subMenu{
+    display: flex;
+    border : solid 1px #e5e5e5;
+}
+
+header .nav .subMenu {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    display : none;
+} 
+
+header .nav .subMenu li{
+    list-style : none;
+    margin : 8px;
+    color : #6a6a6a;
+    cursor : pointer;
+    border : solid 1px #e5e5e5;
+}
