@@ -10,6 +10,7 @@
 
 </head>
 <body>
+    <!-- Header-->
     <header>
         <div class = "top">
         <div class="logo">
@@ -17,13 +18,13 @@
         </div>
 
         <div class = "auth">
-            <span class = "login">로그인</span>
-            <span class = "signup">회원가입</span>
+            <div class = "login">로그인</div>
+            <div class = "signup">회원가입</div>
             <i class="fas fa-globe"></i>
         </div>
 
     </div>
-
+<!-- nav-->
     <nav class="nav">
         <li class="item">
             <ul><div class="menu">메뉴소개</div></ul>
@@ -82,5 +83,46 @@
         
     </nav>
     </header>
+
+ <!-- 이미지 슬라이드 배너부분-->
+ <div class = "section">
+    <input type ="radio" name="slide" id="slide01" checked>
+    <input type ="radio" name="slide" id="slide02">
+    <input type ="radio" name="slide" id="slide03"> 
+
+    <div class="slidewrap">
+        <ul class="slidelist" >
+            <li>
+                <a>
+                    <label for="slide03" class="left"></label>
+                    <img src="./img/slide01.jpg">
+                    <label for="slide02" class="right"></label>            
+                </a>
+            </li>
+            <li>
+                <a>
+                    <label for="slide01" class="left"> </label>
+                    <img src="./img/slide02.jpg">
+                    <label for="slide03" class="right"></label>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <label for="slide02" class="left"> </label>
+                    <img src="./img/slide03.jpg">
+                    <label for="slide01" class="right"></label>
+                
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div>
+    <input type ="radio" name="slide" id="slide01" checked>
+    <input type ="radio" name="slide" id="slide02">
+    <input type ="radio" name="slide" id="slide03"> 
+</div>
+</div>
+
+
 </body>
 </html>
